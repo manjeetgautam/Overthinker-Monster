@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="content/monster.png" type="image/x-icon">
+    <title>Overthinker Monster</title>
+</head>
+<body>
+    
+    <div id="container">
+        <div id="gamebox">
+            <div id="titlebox">
+                <h4>Overthinker Monster</h4>
+                <h4>Kitty</h4>
+            </div>
+            <div id="mainbox">
+                <video src="content/cartoon-background.mp4" id="bg-video"></video>
+                <!-- First look of the game -->
+                <img src="content/sitting-ghost.webp" alt="" id="ghost" width="150px">
+                <img src="content/sitting-cat.gif" alt="" id="cat" width="150px">
+                <p id="tutorial">Enter your first and second option then click Start.</p>
+                
+                <!-- Game running -->
+                <img src="content/running-run.gif" alt=""  id="running-cat" width="150px">
+                <img src="content/ghost-cartoon.gif" alt="" id="running-ghost" width="120px">
+                <h1 id="hurryup"> Hurry Up</h1>
+
+                <!-- kitty wins -->
+                <h2 id="winmessage">You Save The Kitty</h2>
+                <h3 id="timefor">It's Time For</h3>
+                <h1 id="itemmassage"></h1>
+
+                <!-- ghost wins -->
+                <h3 id="ghostwinmassage">You Loose!</h3>
+
+
+            </div>
+        </div>
+        <div id="controlbox">
+            <div id="item">
+                <input type="text" id="item1" placeholder="Option 1">
+                <h3 id="timecount">00</h3>
+                <input type="text" id="item2" placeholder="Option 2">
+            </div>
+            <button id="start-btn">Start</button>
+            <button id="replay">Play Again</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
