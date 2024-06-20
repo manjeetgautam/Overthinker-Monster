@@ -1,54 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="content/monster.png" type="image/x-icon">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="content/monster.png" type="image/x-icon" />
     <title>Overthinker Monster</title>
-</head>
-<body>
-    
+  </head>
+  <body>
     <div id="container">
-        <div id="gamebox">
-            <div id="titlebox">
-                <h4>Overthinker Monster</h4>
-                <h4>Kitty</h4>
-            </div>
-            <div id="mainbox">
-                <video src="content/cartoon-background.mp4" id="bg-video"></video>
-                <!-- First look of the game -->
-                <img src="content/sitting-ghost.webp" alt="" id="ghost" width="150px">
-                <img src="content/sitting-cat.gif" alt="" id="cat" width="150px">
-                <p id="tutorial">Enter your first and second option then click Start.</p>
-                
-                <!-- Game running -->
-                <img src="content/running-run.gif" alt=""  id="running-cat" width="150px">
-                <img src="content/ghost-cartoon.gif" alt="" id="running-ghost" width="120px">
-                <h1 id="hurryup"> Hurry Up</h1>
-
-                <!-- kitty wins -->
-                <h2 id="winmessage">You Save The Kitty</h2>
-                <h3 id="timefor">It's Time For</h3>
-                <h1 id="itemmassage"></h1>
-
-                <!-- ghost wins -->
-                <h3 id="ghostwinmassage">You Loose!</h3>
-
-
-            </div>
+      <div id="gamebox">
+        <div id="titlebox">
+          <h4>Overthinker Monster</h4>
+          <h4>Kitty</h4>
         </div>
-        <div id="controlbox">
-            <div id="item">
-                <input type="text" id="item1" placeholder="Option 1">
-                <h3 id="timecount">00</h3>
-                <input type="text" id="item2" placeholder="Option 2">
-            </div>
-            <button id="start-btn">Start</button>
-            <button id="replay">Play Again</button>
+        <div id="mainbox">
+          <video src="content/cartoon-background.mp4" id="bg-video"></video>
+          <!-- First look of the game -->
+          <img
+            src="content/sitting-ghost.webp"
+            alt=""
+            id="ghost"
+            width="150px"
+          />
+          <img src="content/sitting-cat.gif" alt="" id="cat" width="150px" />
+          <p id="tutorial">
+            Enter your first and second option then click Start.
+          </p>
+
+          <!-- Game running -->
+          <img
+            src="content/running-run.gif"
+            alt=""
+            id="running-cat"
+            width="150px"
+          />
+          <img
+            src="content/ghost-cartoon.gif"
+            alt=""
+            id="running-ghost"
+            width="120px"
+          />
+          <h1 id="hurryup">Hurry Up</h1>
+
+          <!-- kitty wins -->
+          <h2 id="winmessage">You Save The Kitty</h2>
+          <h3 id="timefor">It's Time For</h3>
+          <h1 id="itemmassage"></h1>
+
+          <!-- ghost wins -->
+          <h3 id="ghostwinmassage">You Loose!</h3>
         </div>
+      </div>
+      <div id="controlbox">
+        <div id="item">
+          <input type="text" id="item1" placeholder="Option 1" />
+          <h3 id="timecount">00</h3>
+          <input type="text" id="item2" placeholder="Option 2" />
+        </div>
+        <button id="start-btn">Start</button>
+        <button id="replay">Play Again</button>
+      </div>
+
+      <button id="howtoplay">How To Play</button>
+
+      <div id="instructions">
+        <h2>How to Play the Overthinker Monster Game</h2>
+        <p>
+          Welcome to the Overthinker Monster Game! Follow these simple steps to
+          play:
+        </p>
+        <p><strong>1. Enter Keywords:</strong></p>
+        <p>
+          - Start by entering two keywords of your choice in the input fields
+          provided.
+        </p>
+        <p><strong>2. Start the Game:</strong></p>
+        <p>- Click on the "Start Game" button to begin the challenge.</p>
+        <p><strong>3. Make Your Choice:</strong></p>
+        <p>
+          - Once the game starts, you will see your two keywords displayed as
+          clickable buttons.
+        </p>
+        <p>
+          - You have <strong>10 seconds</strong> to choose one of the keywords
+          by clicking on it.
+        </p>
+        <p><strong>4. Win or Lose:</strong></p>
+        <p>
+          - If you successfully click on one of the keywords within 10 seconds,
+          you win the game!
+        </p>
+        <p>
+          - If you do not click on any keyword within 10 seconds, the monster
+          wins the game.
+        </p>
+        <p>Good luck and have fun!</p>
+      </div>
     </div>
 
     <script src="script.js"></script>
-</body>
+  </body>
 </html>

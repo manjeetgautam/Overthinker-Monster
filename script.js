@@ -15,6 +15,8 @@ let timefor = document.getElementById("timefor")
 let itemmassage = document.getElementById("itemmassage")
 let ghostmassage = document.getElementById("ghostwinmassage")
 let replay = document.getElementById("replay")
+let howtoplay = document.getElementById("howtoplay")
+let instructions = document.getElementById("instructions")
 
 
 // Hide all the charactor and text
@@ -145,4 +147,24 @@ btn.addEventListener("click",()=>{
 
     },1000)
 
+})
+
+
+////// How to play display instructions
+ let displayInstructions = false
+howtoplay.addEventListener("click",()=>{
+    
+   if (displayInstructions === false){
+        instructions.style.display="block"
+        howtoplay.innerText="Close X"
+        displayInstructions=true
+   }
+   else if (displayInstructions === true){
+        instructions.style.display="none"
+        howtoplay.innerText="How To Play"
+        displayInstructions=false
+   }
+    
+    
+    
 })

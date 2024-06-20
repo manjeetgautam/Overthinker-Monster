@@ -13,6 +13,7 @@
     justify-content: center;
     flex-direction: column;
     background-color: blueviolet;
+    position: relative;
 }
 
 #gamebox{
@@ -81,8 +82,30 @@ video{
 #running-ghost{
     left: 55px;
     bottom: 35px;
+    width: 110px;
+    height: 110px;
     display: none;
+    animation-name: runghost;
+    animation-duration: 12s;
+    animation-timing-function: linear;
+    
 }
+
+@keyframes runghost{
+    from{
+        left: 55px;
+        bottom: 35px;
+        width: 120px;
+        height: 120px;
+    }
+    to{
+        left: 200px;
+        bottom: 35px;
+        width: 150px;
+        height: 150px;
+    }
+}
+
 
 #tutorial{
     position: absolute;
@@ -227,3 +250,61 @@ input{
     100%   { transform: translate(0, -0px); }    
 }
 
+#howtoplay{
+    position: absolute;
+    right: 10%;
+    top: 10%;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 7px 5px;
+    background-color: rgb(69, 252, 69);
+    border: 2px solid black;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: ease-in-out 0.5s;
+    z-index: 1;
+}
+
+
+#howtoplay:hover{
+    color: #fff;
+    background-color: red;
+}
+
+#howtoplay::after{
+    content: "";
+    width: 5px;
+    height: 30px;
+    border-radius: 10px;
+    background-color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: ease-in-out  0.5s;
+}
+
+#howtoplay:hover::after{
+    right: 0;
+    left: 94%;
+
+}
+
+#instructions {
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+    width: 80%;
+   position: absolute;
+   display: none;
+}
+
+#instructions h2{
+    margin-bottom: 30px;
+}
+
+#instructions p{
+    margin: 20px;
+}
